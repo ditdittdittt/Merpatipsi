@@ -9,7 +9,14 @@ Merpatipsi merupakan sebuah permainan dimana pemain harus melewati rintangan-rin
 * Bob Yuwono (Mencari asset dan membuat script)
 
 ## Cuplikan
+* Main menu
+<img src="/Dokumentasi/start.jpg">
 
+* Play
+<img src="/Dokumentasi/play.jpg">
+
+* End
+<img src="/Dokumentasi/end.jpg">
 
 ## Teknologi
 * Unity 5.6
