@@ -10,6 +10,7 @@ public class PipeSpawner : MonoBehaviour {
 		public float max;
 	}
 
+	public GameManager gameManager;
 	public GameObject PipePrefab;
 	public float shiftSpeed;
 	public float spawnRate;
@@ -51,7 +52,7 @@ public class PipeSpawner : MonoBehaviour {
 
 	void Update() {
 		if (game.GameOver) return;
-
+		
 		targetAspect = (float)targetAspectRatio.x / targetAspectRatio.y;
 		dynamicSpawnPos.x = (spawnPos.x * Camera.main.aspect) / targetAspect;
 		

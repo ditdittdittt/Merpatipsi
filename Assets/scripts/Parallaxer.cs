@@ -61,6 +61,16 @@ public class Parallaxer : MonoBehaviour {
 	void Update() {
 		if (game.GameOver) return;
 
+		if (game.score > 5){
+			spawnRate = (float)2.2;
+		}
+		if (game.score > 10){
+			spawnRate = (float)1.9;
+		}
+		if (game.score > 15){
+			spawnRate = (float)1.6;
+		}
+
 		Shift();
 		spawnTimer += Time.deltaTime;
 		if (spawnTimer > spawnRate) {
