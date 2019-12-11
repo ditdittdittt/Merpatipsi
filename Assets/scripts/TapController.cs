@@ -56,7 +56,7 @@ public class TapController : MonoBehaviour {
 	void Update() {
 		if (game.GameOver) return;
 
-		if (Input.GetMouseButtonDown(0)) {
+		if (Input.GetMouseButtonDown(0)|| Input.GetKeyDown(KeyCode.Space)) {
 			rigidBody.velocity = Vector2.zero;
 			transform.rotation = forwardRotation;
 			rigidBody.AddForce(Vector2.up * tapForce, ForceMode2D.Force);
